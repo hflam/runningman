@@ -1,0 +1,11 @@
+/app/Config/database.local.php
+/app/Test
+/app/Config/core.php
+/app/Config/database.php
+/app/tmp
+/docs
+/lib
+/lib/Cake/Console/Templates/skel/tmp/
+tags
+.idea
+.project
