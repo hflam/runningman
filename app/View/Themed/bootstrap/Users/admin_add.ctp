@@ -17,7 +17,7 @@
 			<?php echo $this->BootstrapForm->input('is_active'); ?>
 			<div class="form-actions">
 				<?php echo $this->BootstrapForm->button(__('Submit'),array('class'=>'btn btn-primary')); ?>
-			</div>
+			</div> 
 		</fieldset>
 		<?php echo $this->BootstrapForm->end();?>
 	</div>
