@@ -76,7 +76,6 @@ CakePlugin::load('TwitterBootstrap');
 CakePlugin::load('Acl', array('bootstrap' => true));
 CakePlugin::load('MenuBuilder');
 CakePlugin::load('TwitterBootstrapCakeBake');
-CakePlugin::load('MeioUpload');
 CakePlugin::load('CakeAttachment');
 CakePlugin::load('Tools');
 CakePlugin::load('Filter');
