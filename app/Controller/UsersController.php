@@ -75,6 +75,16 @@ class UsersController extends AppController {
 		$this->set('users', $this->paginate());
 	}
 
+	/**
+	 * helpers method
+	 *
+	 * @return void
+	 */
+	public function admin_helpers() {
+		$this->User->recursive = 0;
+		$this->set('users', $this->paginate('User',array('User.role_id' =>Configure::read('Role.helper'))));
+	}
+
     /**
      * view method
      *
@@ -110,8 +120,9 @@ class UsersController extends AppController {
         } else {
             $this->request->data['User']['role_id'] = $role_id;
         }
-		$roles = $this->User->Role->find('list',array('conditions'=>array('id !='=>Configure::read('Role.master'))));
-		$this->set(compact('roles'));
+		$booths = $this->User->Booth->find('list');
+		$roles = $this->User->Role->find('list',array('conditions'=>array('id >'=>Configure::read('Role.admin'))));
+		$this->set(compact('roles','booths'));
 	}
 
 

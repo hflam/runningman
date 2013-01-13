@@ -21,8 +21,18 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
 <body>
-
-	<?php echo $content_for_layout; ?>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <?php echo $this->element('Layouts/default/navbar'); ?>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <?php echo $this->Session->flash(); ?>
+        <?php echo $this->Session->flash('auth'); ?>
+        <?php echo $content_for_layout; ?>
+    </div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>

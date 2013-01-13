@@ -165,14 +165,14 @@ class AppController extends Controller {
             $menu = array(
                 'admin-navbar' => array(
                     array(
-                        'title' => __('Users'),
-                        'url' => array('plugin'=>false, 'controller' => 'users', 'action' => 'index', 'admin' => true),
-                        'permissions' => array(Configure::read('Role.master'))
+                        'title' => __('Booths'),
+                        'url' => array('plugin'=>false, 'controller' => 'booths', 'action' => 'index', 'admin' => true),
+                        'permissions' => array(Configure::read('Role.master'),Configure::read('Role.admin'))
                     ),
                     array(
-                        'title' => __('Roles'),
-                        'url' => array('plugin'=>false, 'controller' => 'roles', 'action' => 'index', 'admin' => true),
-                        'permissions' => array(Configure::read('Role.master'))
+                        'title' => __('Helpers'),
+                        'url' => array('plugin'=>false, 'controller' => 'users', 'action' => 'helpers', 'admin' => true),
+                        'permissions' => array(Configure::read('Role.master'),Configure::read('Role.admin'))
                     ),
                     array(
                         'title' => __('ACL'),
@@ -180,19 +180,9 @@ class AppController extends Controller {
                         'permissions' => array(Configure::read('Role.master'))
                     ),
                     array(
-                        'title' => __('Customers'),
-                        'url' => array('plugin'=>false, 'controller' => 'customers', 'action' => 'index', 'admin' => true),
-                        'permissions' => array(Configure::read('Role.master'),Configure::read('Role.admin'))
-                    ),
-                    array(
-                        'title' => __('Calls'),
-                        'url' => array('plugin'=>false, 'controller' => 'calls', 'action' => 'index', 'admin' => true),
-                        'permissions' => array(Configure::read('Role.master'),Configure::read('Role.admin'))
-                    ),
-                    array(
-                        'title' => __('Caller Ids'),
-                        'url' => array('plugin'=>false, 'controller' => 'callerids', 'action' => 'index', 'admin' => true),
-                        'permissions' => array(Configure::read('Role.master'),Configure::read('Role.admin'))
+                        'title' => __('Players'),
+                        'url' => array('plugin'=>false, 'controller' => 'players', 'action' => 'index', 'admin' => true),
+                        'permissions' => array(Configure::read('Role.master'),Configure::read('Role.admin'),Configure::read('Role.helper'))
                     ),
                 ),
                 'admin-navbar-loggedout' => array(
