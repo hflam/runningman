@@ -106,7 +106,7 @@ class AppController extends Controller {
      *
      * @var string
      */
-    public $theme = 'bootstrap';
+    public $theme = 'default';
 	
 	/**
      * getCurrentUser
@@ -144,9 +144,9 @@ class AppController extends Controller {
 
         // AssetCollectorComponent asset list
 
-        if ($this->theme == 'bootstrap') {
+        if ($this->theme == 'default') {
             //$this->AssetCollector->resetControllersPath('/theme/bootstrap/js/controllers/');
-            $this->AssetCollector->setThemeName('bootstrap');
+            $this->AssetCollector->setThemeName('default');
 
             $this->AssetCollector->css('bootstrap');
             $this->AssetCollector->css('bootstrap-responsive');

@@ -3,20 +3,16 @@
  * @var $this View
  */
 ?>
-<div id="myCarousel" class="carousel slide">
-	<!-- Carousel items -->
-	<div class="carousel-inner">
-		<div class="active item">
-			
-		</div>
-		<div class="item">
-			
-		</div>
-		<div class="item">
-			
+<?php $this->set('title_for_layout', __('Home')); ?>
+<div class="page-header">
+    <h1><?php echo __('Dashboard'); ?> <small><?php echo Configure::read('App.name'); ?></small></h1>
+</div>
+<div class="row">
+	<div class="span12">
+		<div class="row">
+			<div class="span6">
+				<h3><?php echo __('Latest news'); ?></h3>
+			</div>
 		</div>
 	</div>
-	<!-- Carousel nav -->
-	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
