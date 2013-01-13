@@ -1,0 +1,1 @@
+<?php echo $this->MenuBuilder->build('navbar',array('class'=>'nav')); ?>

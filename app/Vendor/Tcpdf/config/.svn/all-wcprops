@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/9/app/vendors/tcpdf/config
+END
+tcpdf_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/9/app/vendors/tcpdf/config/tcpdf_config.php
+END
+tcpdf_config_alt.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/9/app/vendors/tcpdf/config/tcpdf_config_alt.php
+END
+tcpdf_config.php.default
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/8/app/vendors/tcpdf/config/tcpdf_config.php.default
+END
+tcpdf_config_alt.php.default
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/8/app/vendors/tcpdf/config/tcpdf_config_alt.php.default
+END

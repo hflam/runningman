@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/!svn/ver/9/app/vendors/tcpdf
+END
+LICENSE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/8/app/vendors/tcpdf/LICENSE.TXT
+END
+tcpdf.p12
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/8/app/vendors/tcpdf/tcpdf.p12
+END
+qrcode.php
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/8/app/vendors/tcpdf/qrcode.php
+END
+unicode_data.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/8/app/vendors/tcpdf/unicode_data.php
+END
+CHANGELOG.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/8/app/vendors/tcpdf/CHANGELOG.TXT
+END
+tcpdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/8/app/vendors/tcpdf/tcpdf.php
+END
+tcpdf.crt
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/8/app/vendors/tcpdf/tcpdf.crt
+END
+barcodes.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/8/app/vendors/tcpdf/barcodes.php
+END
+pdf417.php
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/8/app/vendors/tcpdf/pdf417.php
+END
+README.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/8/app/vendors/tcpdf/README.TXT
+END
+htmlcolors.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/8/app/vendors/tcpdf/htmlcolors.php
+END
+spotcolors.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/8/app/vendors/tcpdf/spotcolors.php
+END
+tcpdf.fdf
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/!svn/ver/8/app/vendors/tcpdf/tcpdf.fdf
+END
+2dbarcodes.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/8/app/vendors/tcpdf/2dbarcodes.php
+END

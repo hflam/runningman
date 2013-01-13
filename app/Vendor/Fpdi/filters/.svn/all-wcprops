@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/9/app/vendors/fpdi/filters
+END
+FilterASCII85.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/9/app/vendors/fpdi/filters/FilterASCII85.php
+END
+FilterASCII85_FPDI.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/9/app/vendors/fpdi/filters/FilterASCII85_FPDI.php
+END
+FilterLZW.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/9/app/vendors/fpdi/filters/FilterLZW.php
+END
+FilterLZW_FPDI.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/!svn/ver/9/app/vendors/fpdi/filters/FilterLZW_FPDI.php
+END
