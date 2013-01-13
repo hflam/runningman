@@ -135,7 +135,7 @@ class AppController extends Controller {
         $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login', 'admin' => true);
         $this->Auth->loginRedirect = array('controller' => 'users', 'action' => 'home', 'admin' => true);
         $this->Auth->flash = array('element'=>'Flash/error','key'=>'auth','params'=>array());
-        $this->Auth->allow('*'); // @todo: for development purposes
+        //$this->Auth->allow('*'); // @todo: for development purposes
 
         //Protect ACL plugin
         if ($this->request['plugin']=='acl'&&$this->Session->read('Auth.User.role_id')!=Configure::read('Role.master')) {
