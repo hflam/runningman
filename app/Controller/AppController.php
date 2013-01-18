@@ -108,6 +108,8 @@ class AppController extends Controller {
      */
     public $theme = 'default';
 	
+	public $currentUser = array();
+	
 	/**
      * getCurrentUser
 	 * 
@@ -195,6 +197,7 @@ class AppController extends Controller {
         }
 
         // For default settings name must be menu
+        $this->currentUser = $this->Session->read('Auth.User');
         $currentUser = $this->Session->read('Auth');
         $this->set(compact('menu','currentUser'));
 

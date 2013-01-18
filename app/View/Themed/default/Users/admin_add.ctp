@@ -8,7 +8,7 @@
 			<legend><?php echo __('Personal Information'); ?></legend>
             <?php echo $this->BootstrapForm->input('name'); ?>
             <?php echo $this->BootstrapForm->input('lastname'); ?>
-            <?php echo $this->BootstrapForm->input('email'); ?>
+            <?php echo $this->BootstrapForm->input('phone_no'); ?>
             <legend><?php echo __('Account Information'); ?></legend>
             <?php echo $this->BootstrapForm->input('role_id', array('empty'=>'')); ?>
             <?php echo $this->BootstrapForm->input('booth_id', array('empty'=>'', 'label' => 'Assigned Booth')); ?>

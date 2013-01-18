@@ -6,6 +6,21 @@ App::uses('AppController', 'Controller');
  * @property Player $Player
  */
 class PlayersController extends AppController {
+	
+	public function beforeFilter() {
+		parent::beforeFilter();
+	}
+	
+	/**
+     * Models
+     *
+     * @var array
+     */
+    public $uses = array(
+        'Player',
+        'Booth'
+    );
+	
 	/**
 	 * admin_index method
 	 *
@@ -142,11 +157,13 @@ class PlayersController extends AppController {
 				$this->redirect(array('action'=>'index'));
 			}			
 		}
+
 		if ($this->Player->save($player)) {
 			$this->Session->setFlash(__('Player '.$player['Player']['name'].'\'s token has '.$word.' by 1!'),'Flash/success');
 			$this->redirect(array('action'=>'index'));
 		} else {
 			$this->Session->setFlash(__('The player could not be saved. Please, try again.'), 'Flash/error');
+			$this->redirect(array('action'=>'index'));
 		}
 	}
 
