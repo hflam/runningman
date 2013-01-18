@@ -19,8 +19,11 @@
 			<?php foreach ($players as $player) { ?>
 			<tr>
 				<td><?php echo h($player['Player']['name']); ?>&nbsp;</td>
-				<td><?php echo h($player['Player']['tokens']); ?>&nbsp;</td>
-				<td><?php echo h($player['Player']['wmi_key']); ?>&nbsp;</td>
+				<td>
+					<?php echo $this->Html->link($this->BootstrapIcon->css('plus','black'), array('action' => 'token',$player['Player']['id'],'plus'), array('class'=>'','escape'=>false)); ?>
+					<?php echo h($player['Player']['tokens']); ?>&nbsp;
+					<?php echo $this->Html->link($this->BootstrapIcon->css('minus','black'), array('action' => 'token',$player['Player']['id'],'minus'), array('class'=>'','escape'=>false)); ?>
+				<td><?php echo $this->Html->link(h($player['Player']['wmi_key']),'http://www.wheremi.pro/track?key=c292blQx',array('target'=>'parent')); ?>&nbsp;</td>
 				<td>
 					<div class="btn-group">
 						<?php echo $this->Html->link($this->BootstrapIcon->css('search','white').' '.__('View'), array('action' => 'view', $player['Player']['id']), array('escape'=>false, 'class'=>'btn btn-small btn-primary')); ?>

@@ -118,6 +118,39 @@ class PlayersController extends AppController {
 	}
 
 	/**
+	 * admin_token method
+	 *
+	 * @param string $id
+	 * @return void
+	 */
+	public function admin_token($id, $mode) {
+		$this->Player->id = $id;
+		if (!$this->Player->exists()) {
+			throw new NotFoundException(__('Invalid player'));
+		}
+		$conditions = array('Player.id' => $id);
+		$player = $this->Player->find('first', compact('conditions'));
+		if ($mode == 'plus') {
+			$player['Player']['tokens'] += 1;
+			$word = 'increased';
+		} else {
+			if ($player['Player']['tokens'] > 0) {
+				$player['Player']['tokens'] -= 1;
+				$word = 'decreased';
+			} else {
+				$this->Session->setFlash(__('Not enough token for Player '.$player['Player']['name'].'.'), 'Flash/error');
+				$this->redirect(array('action'=>'index'));
+			}			
+		}
+		if ($this->Player->save($player)) {
+			$this->Session->setFlash(__('Player '.$player['Player']['name'].'\'s token has '.$word.' by 1!'),'Flash/success');
+			$this->redirect(array('action'=>'index'));
+		} else {
+			$this->Session->setFlash(__('The player could not be saved. Please, try again.'), 'Flash/error');
+		}
+	}
+
+	/**
 	 * admin_activate method
 	 *
 	 * @param string $id
